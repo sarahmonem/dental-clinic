@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>clinic</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+        <style>
+            body {
+                background-image: url(/bg.jpg);
+                background-blend-mode: overlay;
+                background-color: #00000070;
+            }
+
+            .branches .btn {
+                padding: 10px 100px;
+                border-radius: 35px;
+            }
+
+            .branches {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                height: 800px;
+            }
+
+            @keyframes slideIn {
+                0% {
+                    transform: translateX(-100px);
+                    /* Start from 100px above */
+                    opacity: 0;
+                }
+
+                100% {
+                    transform: translateY(0);
+                    /* End at the normal position */
+                    opacity: 1;
+                }
+            }
+
+            /* Apply the animation to the button */
+            .branches .btn {
+                animation: slideIn 1s ease-out forwards;
+                /* 1s duration, ease-out timing */
+            }
+
+            .branches .btn {
+                border: 2px solid #0d6efd;
+                color: #fff;
+            }
+
+            @media (max-width: 576px) {
+                .branches {
+
+                    flex-direction: column;
+                }
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="branches">
+                    <a class="btn btn-primary" href="https://wa.inmorning.com/authentication/open_ticket"
+                        role="button">تصوير أسنان</a>
+                    <a class="btn btn-primary" href="https://wa.inmorning.com/authentication/open_ticket"
+                        role="button">تصوير أشعة</a>
+                    <a class="btn btn-primary" href="https://wa.inmorning.com/authentication/open_ticket" role="button">
+                        فحوصات أولتراساوند</a>
+
+                    <a class="btn  back" href="/" role="button"> رجوع</a>
+
+                </div>
+
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+    </body>
+
+</html>
