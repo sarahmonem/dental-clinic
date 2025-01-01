@@ -1,0 +1,81 @@
+body {
+    background-image: url(/bg.jpg);
+    background-blend-mode: overlay;
+    background-color: #00000070;
+}
+
+.branches .btn {
+    padding: 10px 100px;
+    border-radius: 35px;
+}
+
+.branches {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 800px;
+}
+
+@keyframes slideInUp {
+    0% {
+        transform: translateY(-100px);
+        /* Start from 100px above */
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        /* End at the normal position */
+        opacity: 1;
+    }
+
+
+}
+
+/* Apply the animation to the button */
+.branches .btn {
+    animation: slideInUp 1s ease-out forwards;
+    /* 1s duration, ease-out timing */
+}
+
+@media (max-width: 576px) {
+    .branches {
+
+        flex-direction: column;
+    }
+}
+
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100px);
+        /* Start from 100px above */
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        /* End at the normal position */
+        opacity: 1;
+    }
+}
+
+/* Apply the animation to the button */
+.branches .btn , .card {
+    animation: slideInLeft 1s ease-out forwards;
+    /* 1s duration, ease-out timing */
+}
+
+
+.branches .btn {
+    border: 2px solid #0d6efd;
+    color: #fff;
+}
+
+@media (max-width: 576px) {
+    .branches {
+
+        flex-direction: column;
+    }
+}
