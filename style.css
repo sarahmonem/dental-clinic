@@ -81,4 +81,11 @@ body {
     .card{
         width: 90%;
     }
+    body {
+      
+        background-image: url(/bg.jpg);
+        background-size: cover;
+        background-blend-mode: overlay;
+        background-color: #00000070;
+    }
 }
