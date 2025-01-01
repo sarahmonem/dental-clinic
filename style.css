@@ -83,7 +83,7 @@ body {
     }
     body {
       
-        background-image: url(/bg.jpg);
+        background-image: url(/mobilebg.jpg);
         background-size: cover;
         background-blend-mode: overlay;
         background-color: #00000070;
